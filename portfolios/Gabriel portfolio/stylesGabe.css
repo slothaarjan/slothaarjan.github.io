@@ -1,0 +1,154 @@
+/* Global Styles */
+
+body {
+    font-family: 'Outfit', Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hero {
+    background-color: #222;
+    color: white;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.style-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.style-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+#Tablet-desktop {
+    display: none;
+}
+
+.mobile-required-list {
+    margin-left: 20px;
+}
+
+footer a {
+    color: #87cefa;
+    text-decoration: none;
+}
+
+/* gabe portfolio */
+.gabe img {
+    display: block;
+    max-width: 290px;
+    width: 60%;
+    height: auto;
+    border: 5px solid #222;
+    margin: auto;
+}
+
+.gabe h3 {
+    text-align: center;
+}
+
+.gabe p {
+    text-align: center;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+
+    
+    .mobile-required-list {
+        display: none;
+    }
+
+    #Tablet-desktop {
+        display: table;
+    }
+
+    .style-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section.container {
+        padding-bottom: 15px;
+    }
+
+    /* gabe portfolio */
+    .gabe img {
+       max-width: 30%;
+       height: auto;
+       float: left;
+       margin: 0 15px;
+    }
+    .gabe h3 {
+        text-align: left;
+    }
+
+    .gabe p {
+        text-align: left;
+    }
+
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+
+    .mobile-required-list {
+        display: none;
+    }
+
+    #Tablet-desktop {
+        display: table;
+    }
+
+    .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .navbar-nav .nav-link.active {
+        font-weight: bold;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .style-box {
+        font-size: 1.05rem;
+    }
+}

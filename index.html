@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Sneakers | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mobile">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">Vision Sneakers</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="mens.html" class="nav-link">Men</a></li>
+                <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header class="hero text-center">
+    <div class="container">
+        <h1>Street-ready sneakers for real students.</h1>
+        <p>Simple designs. Bold colors. Prices that don’t destroy your budget.</p>
+        <button class="btn btn-primary mt-2" onclick="showStudentDeal()">Show Today’s Student Deal</button>
+    </div>
+</header>
+
+<section class="container my-4">
+    <h2 class="section-title text-center mb-3">Pick Your Vibe</h2>
+    <div class="feature-grid">
+        <article class="feature-card">
+            <h3>Everyday Classic</h3>
+            <p>Clean sneakers that work with jeans, joggers, and uniforms.</p>
+        </article>
+        <article class="feature-card">
+            <h3>Y2K Color Pop</h3>
+            <p>Pastel and neon details inspired by early 2000s streetwear.</p>
+        </article>
+        <article class="feature-card">
+            <h3>Skate & Chill</h3>
+            <p>Flat soles and extra grip for skating and campus walks.</p>
+        </article>
+        <article class="feature-card">
+            <h3>All-Black Stealth</h3>
+            <p>Low-key sneakers for work, labs, and anything “no logos”.</p>
+        </article>
+    </div>
+</section>
+
+<section class="container my-4">
+    <h2 class="section-title text-center mb-3">Brand Concept Video</h2>
+    <p class="text-center">
+        Our shoe in real life
+    </p>
+    <div class="ratio ratio-16x9">
+        <video controls>
+            <source src="video/shoevid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section class="container my-4">
+    <h2 class="section-title">Why Teens Choose Vision Sneakers</h2>
+
+    <!-- Mobile-only list (HIDE on tablet/desktop via media query) -->
+    <ul class="mobile-required-list">
+        <li>Comfortable enough for all day classes.</li>
+        <li>Styles that actually match teen outfits.</li>
+        <li>Prices that feel realistic.</li>
+        <li>Easy to clean and keep looking fresh.</li>
+    </ul>
+
+    <!-- Tablet/Desktop table (HIDDEN on mobile, shown on larger) -->
+    <table id="Tablet-desktop" class="table table-striped table-bordered">
+        <caption>Sample Price Comparison by Collection</caption>
+        <thead>
+            <tr>
+                <th>Collection</th>
+                <th>Style</th>
+                <th>Best For</th>
+                <th>Price Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Men</td>
+                <td>Everyday Classic</td>
+                <td>Campus + casual hangouts</td>
+                <td>$59.99 – $79.99</td>
+            </tr>
+            <tr>
+                <td>Women</td>
+                <td>Y2K Color Pop</td>
+                <td>Outfits & photoshoots</td>
+                <td>$54.99 – $84.99</td>
+            </tr>
+            <tr>
+                <td>Unisex</td>
+                <td>Skate & Chill</td>
+                <td>Skating & daily wear</td>
+                <td>$64.99 – $89.99</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="container my-4">
+    <h2 class="section-title">How to Get Your Pair</h2>
+    <ol>
+        <li>Browse the Men or Women page to find a style you like.</li>
+        <li>Pick your size and color in the product section.</li>
+        <li>Use the student deal.</li>
+        <li>Place your order and rock them anywhere.</li>
+    </ol>
+</section>
+
+<section class="container my-4">
+    <h2 class="section-title">Our Simple Promise</h2>
+    <dl>
+        <dt>Comfort</dt>
+        <dd>We focus on soft insoles and flexible soles so you can walk all day and not worry about your feet.</dd>
+
+        <dt>Style</dt>
+        <dd>Each design is based on current teen trends.</dd>
+
+        <dt>Value</dt>
+        <dd>We keep prices low enough that you could save up for them.</dd>
+    </dl>
+</section>
+
+<section class="container my-4">
+    <h2 class="section-title text-center mb-3">Quick Preview</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                     alt="Floating sneaker preview"
+                     class="card-img-top animated-img-1">
+                <div class="card-body">
+                    <p class="card-text">
+                        A simple, chunky sneaker that fits almost any campus outfit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="social-bar text-center mt-4 mb-0">
+    <p>Follow our sample brand:</p>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="me-3">
+        <i class="fab fa-facebook fa-2x"></i>
+    </a>
+    <a href="https://x.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-2x"></i>
+    </a>
+</section>
+
+<footer class="site-footer">
+    Home page created by <strong>All Team Members</strong>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
